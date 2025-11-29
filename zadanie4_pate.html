@@ -1,0 +1,64 @@
+<html>
+<head>
+<script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<b>1)kiedy powstał JavaScript (podaj datę).</b> <br>
+JavaScript został stworzony w 1995 roku, a oficjalnie zaprezentowany w grudniu 1995.
+</p>
+<b>2)dlaczego jest to język skryptowy</b><br>
+Bo kod JS nie jest kompilowany do pliku wykonywalnego jak np. C++, tylko jest interpretowany „w locie” przez przeglądarkę (lub silnik JS na serwerze).
+</p>
+<b>3)gdzie jest wykonywany JS (klient lub serwer)</b><br>
+Tradycyjnie po stronie klienta (w przeglądarce), ale dzięki Node.js może być też wykonywany po stronie serwera.
+</p>
+<b>4)dlaczego jest JS to bezpieczne narzędzie</b><br>
+Bo JS w przeglądarce działa w tzw. piaskownicy (sandbox), czyli ma ograniczony dostęp do systemu operacyjnego np. nie może kasować plików na dysku użytkownika.
+<p>
+<b>5)czy jest to język obiektowy , jeśli tak to dlaczego.</b><br>
+Tak, JavaScript jest językiem obiektowym, bo korzysta z obiektów, dziedziczenia (prototypowego) i pozwala tworzyć własne klasy/obiekty.
+</p>
+11
+<b>6)wymień zalety JS:</b><br>
+Zaleta 1: <br>
+Szybkość działania <br>
+Zaleta 2: <br>
+Uniwersalność <br>
+Zaleta 3: <br>
+Ogromna liczba bibliotek i frameworków ułatwiających tworzenie aplikacji.
+</p>
+<b>7)Framework to:</b><br>
+gotowy szkielet aplikacji, zbiór narzędzi i bibliotek ułatwiających pisanie kodu (np. React, Angular, Vue).
+</p>
+<b>8)Do aplikacji mobilnych można użyć Framework</b><br>
+tak, np. React Native, Ionic, Flutter pozwalają pisać aplikacje mobilne w JS i uruchamiać je na Androidzie i iOS.
+</p>
+<b>9)Aplikacje responsywne to:</b><br>
+To aplikacje/strony internetowe, które dostosowują wygląd do różnych ekranów (komputery, tablety, telefony).
+</p>
+<b>10)Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu</b><br>
+< input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"></code>
+Tworzy przycisk o nazwie „przycisk” i napisie „Nowa Strona”, a po jego kliknięciu wywołuje funkcję WinOpen(' '), która ma otworzyć nowe okno/stronę.
+</p>
+<b>11)Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu</b><br>
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+Otwiera nowe okno przeglądarki z plikiem obraz.html, nadaje mu nazwę „okienko” i ustawia określone parametry wyglądu oraz położenia.
+b)toolbar=no - ukrywa pasek narzędzi<p>
+c)directories=no - ukrywa katalogi<p>
+d)menubar=no - ukrywa menu<p>
+e)height=280 - wysokość okna 280 px<p>
+f)width=160 - szerokość okna 160 px<p>
+g)top=200 - odległość od góry 200 px<p>
+h)left=200 - odległość od lewej 200 px<p>
+</p>
+<b>12)Opisz następującą instrukcję window.close()</b><br>
+Polecenie window.close() zamyka bieżące okno przeglądarki lub okno otwarte wcześniej za pomocą window.open().
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

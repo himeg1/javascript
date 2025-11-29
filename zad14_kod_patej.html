@@ -1,0 +1,28 @@
+<textarea rows="29" cols="75">
+<!DOCTYPE html>
+ <body>
+ <div style="color:brown;font-size:50px;">
+ <script language="JavaScript">
+//Joachim Patej 3k
+//Zadanie 14
+ var m_pat=prompt("m=","");
+ var b_pat;
+ var c_pat;
+ var d_pat;
+ var e_pat;
+ var a_pat=parseFloat(m_pat);
+     b_pat=a_pat+1;
+     c_pat=a_pat*(a_pat+1);
+     d_pat=b_pat+1;
+     e_pat=b_pat*d_pat;   
+ document.write("1/"+a_pat+" = 1/"+d_pat+" + 1/"+e_pat+" + 1/"+c_pat+"<br>");
+function okno_zamknij_patej()
+ {
+ window.close()
+ }
+ </script>
+ </div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_patej()"/>
+ </body>
+ </html>
+</textarea>

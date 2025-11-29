@@ -1,0 +1,28 @@
+<textarea rows="30" cols="70">
+<html>
+ <body>
+ <div style="color:blue;font-size:38px;">
+ <script language="JavaScript">
+//Joachim Patej 3K
+//Zadanie 13
+ var D1_pat=prompt("Data1=","");
+ var G1_pat=prompt("Godzina1=","");
+ var D2_pat=prompt("Data2=","");
+ var G2_pat=prompt("Godzina2=","");
+ var sekund;
+ var a=parseFloat(D1_pat);
+ var b=parseFloat(D2_pat);
+ var g1=parseFloat(G1_pat);
+ var g2=parseFloat(G2_pat);
+ sekund=((a*24+g1)-(b*24+g2))*3600;
+ document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+ function okno_zamknij_patej()
+ {
+ window.close()
+ }
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_patej()"/>
+ </body>
+ </html>
+</textarea>
