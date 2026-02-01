@@ -1,0 +1,41 @@
+<textarea cols="80" rows="80">
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+    var samochod = {
+    kolor: 'czerwony',
+    marka: 'Toyota',
+    rok_produkcji: 2018,
+    samochod_wyswietl_patej: function ()
+    {
+     document.write(this.kolor + ' ' + this.marka + ' ' + this.rok_produkcji);
+    }
+   }
+
+     samochod.samochod_wyswietl_patej();
+
+     samochod.przebieg = 120000;
+
+   samochod.samochod_pokaz_patej = function()
+   {
+    alert('Przebieg: ' + this.przebieg + ' km');
+   }
+
+     samochod.samochod_pokaz_patej();
+  </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to samochod<br>
+ Pola:<br>
+ kolor<br>
+ marka<br>
+ rok_produkcji<br>
+ metoda: samochod_wyswietl_patej<br>
+ nowe pole to przebieg<br>
+ nowa metoda to samochod_pokaz_patej();<br>
+</body>
+</html>
+</textarea>

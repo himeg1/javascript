@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+             function samochod(kolor_k, marka_k, rok_k, silnik_k)
+        {
+            this.kolor = kolor_k;
+            this.marka = marka_k;
+            this.rok_produkcji = rok_k;
+            this.silnik = silnik_k;
+        }
+
+              samochod.prototype.samochod_wyswietl_patej = function ()
+        {
+            alert(
+                this.marka + " " +
+                this.kolor + " " +
+                this.rok_produkcji + " " +
+                this.silnik
+            );
+        };
+
+              var samochod1 = new samochod("czerwony", "Toyota", 2018, "benzyna");
+        var samochod2 = new samochod("niebieski", "Ford", 2015, "diesel");
+        var samochod3 = new samochod("czarny", "BMW", 2020, "hybryda");
+
+               samochod1.samochod_wyswietl_patej();
+        samochod2.samochod_wyswietl_patej();
+        samochod3.samochod_wyswietl_patej();
+
+        document.write("dostęp do właściwości (pól) obiektów<br>");
+
+               document.write(
+            "samochod pierwszy: " +
+            samochod1.kolor + " " +
+            samochod1.marka + " " +
+            samochod1.rok_produkcji + " " +
+            samochod1.silnik + "<br>"
+        );
+
+        document.write(
+            "samochod drugi: " +
+            samochod2.kolor + " " +
+            samochod2.marka + " " +
+            samochod2.rok_produkcji + " " +
+            samochod2.silnik + "<br>"
+        );
+
+        document.write(
+            "samochod trzeci: " +
+            samochod3.kolor + " " +
+            samochod3.marka + " " +
+            samochod3.rok_produkcji + " " +
+            samochod3.silnik + "<br>"
+        );
+
+       
+        samochod1.przebieg = 150000;
+
+              samochod1.samochod_pokaz_patej = function ()
+        {
+            alert("Przebieg samochodu pierwszego: " + this.przebieg + " km");
+        };
+
+       
+        samochod1.samochod_pokaz_patej();
+    </script>
+</head>
+<body>
+<br>
+Programowanie obiektowe  <br>
+Obiekt (konstruktor) to: samochod<br>
+Pola w konstruktorze:<br>
+kolor<br>
+marka<br>
+rok_produkcji<br>
+silnik<br>
+Metoda w prototypie: samochod_wyswietl_patej()<br>
+Nowe pole poza obiektem: przebieg<br>
+Nowa metoda poza obiektem: samochod_pokaz_patej()<br>
+</body>
+</html>
