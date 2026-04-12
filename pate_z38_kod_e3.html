@@ -1,0 +1,59 @@
+<title> Patej z38_KOD_e3 </title>
+<textarea rows="60" cols="100">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patej Z38_JS_e3</title>
+    <style>
+        #demo_patej {
+            color: red;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<p align="center">
+    <font color="red" size="7">Patej</font>
+</p>
+
+<p>
+    <font color="green" size="5">
+        Pojęcie rozdzielczość ekranu/monitora oznacza:
+        liczba pikseli wyświetlanych na ekranie w poziomie i pionie (np. 1920x1080).
+        Im wyższa rozdzielczość, tym więcej szczegółów i ostrzejszy obraz na monitorze.
+    </font>
+</p>
+
+<p>
+    <font color="blue" size="6">
+        Pojęcie szerokość/wysokość ekranu przeglądarki w pikselach oznacza:
+        aktualny rozmiar okna przeglądarki internetowej w pikselach -
+        czyli ile pikseli zajmuje samo okno przeglądarki (bez pasków narzędzi systemu).
+        Może być mniejszy niż rozdzielczość monitora gdy okno nie jest zmaksymalizowane.
+    </font>
+</p>
+
+    <p id="demo_patej"></p>
+
+    <script>
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        var x = document.getElementById("demo_patej");
+        x.innerHTML = "Szerokość przeglądarki: " + w + "px, Wysokość: " + h + "px.";
+
+	
+        document.write("<font color=silver size=7>Twoja rozdzielczość ekranu to: </font>");
+        document.write("<font color=silver size=7>" + screen.width + "</font>");
+        document.write("<font color=silver size=7> na </font>");
+        document.write("<font color=silver size=7>" + screen.height + "</font>");
+    </script>
+
+
+</body>
+</html>
+<!-- Patej Z38_JS_e3 -->
+</textarea>
+<!-- Patej Z38_KOD_e3 -->
