@@ -1,0 +1,26 @@
+<textarea rows="35" cols="40">
+<!DOCTYPE html>
+ <head>
+ <title>Sprawdzenie danych Patej </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+ do {
+var liczba1=prompt("wysokość=","");
+ var h_pat=parseFloat(liczba1);
+ }
+ while ( h_pat<=0);
+ do {
+var liczba1=prompt("podstawa=","");
+ var a_pat=parseFloat(liczba1);
+ }
+ while(!( a_pat>0));
+var Pole=a_pat*h_pat/2;
+ document.write("Pole="+Pole.toFixed(2)+" cm^2"+"<br>");
+ </script>
+</div>
+</body>
+</html>
+</textarea>
